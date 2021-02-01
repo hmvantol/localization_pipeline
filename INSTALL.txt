@@ -1,0 +1,18 @@
+
+Installation:
+-------------
+-Make a virtual environment with pipenv and python2: pipenv install "biopython<=1.76" --two
+-Install SignalP 4.1 from https://services.healthtech.dtu.dk/service.php?SignalP-5.0
+-Install ASAFind 1.1.7 from https://bitbucket.org/rocaplab/asafind/src/main/
+-Install MitoProtII 1.101 from ftp://ftp.biologie.ens.fr/pub/molbio
+-Install ScanProsite from ftp://ftp.expasy.org/databases/prosite/
+-Install TargetP 1.1 from https://services.healthtech.dtu.dk/software.php?TargetP-2.0
+-Install PredictNLS 1.3 from https://github.com/peterjc/pico_galaxy/blob/master/tools/predictnls/
+-Download fasta file of genes (eg. Dataset S1 from  https://doi.org/10.1111/tpj.12734)
+-Download mitochondrial and plastid genbank file (eg. NC_007405, NC_008589)
+
+
+Usage:
+------
+pipenv shell
+sh localization.sh input_dir output_dir nuclear_proteome_fasta mito_genome_gbk plastid_genome_gbk
